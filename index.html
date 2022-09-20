@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mellow Bears: Landing Page</title>
+
+    <!-- -------- Bootstrap ---------- -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+    <!-- ------- CSS ---------- -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- --------- JS ---------- -->
+    <script src="js/script.js"></script>
+
+    <!-- -------------- AOS Library ----------- -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Hero & Navigation Bar -->
+<section>
+    <!-- Hero -->
+    <div class="p-5 text-center bg-image" style="
+    background-image: linear-gradient(0deg, rgba(152, 62, 21, 0.5), rgba(108, 43, 3, 0.5)),
+    url('images/teddy-bear-lady.jpg');
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    "
+    >    
+     <!-- Navigation Bar -->
+     <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            Mellow Bears
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ms-auto">
+                <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                <a class="nav-link" href="#features">Features</a>
+                <a class="nav-link" href="#contact">Contact</a>
+                <button class="btn btn-outline-light btn-nav" type="button">
+                    <a href="#download" style="text-decoration: none; color: white; ">Download</a>
+                </button>     
+            </div>
+          </div>
+       </div>
+    </nav> <!-- Navbar end-->
+            <div class="d-flex justify-content-center align-items-center h-75 mt-4">
+                <div class="text-white">
+                    <h1 class="display-1 mb-5"><em>Find Your Perfect Snuggle Buddy</em></h1>
+                    <h4 class="sub-title mb-5">
+                        Shop the Mellow Bears Collection to find your perfect match.
+                    <br>
+                        A new friend at your doorstep!
+                    </h4>
+                    <a class="btn btn-lg btn-hero" href="#contact" role="button">Browse the Collection</a>
+                </div>
+            </div>
+    </div>
+</section> <!--End Hero & Navigation section-->
+
+<!-- Content -->
+<section class="content1-bg">
+    <div class="pt-3 ps-4">
+        <span class="sect-label">HOW TO ORDER</span>
+        <h1 class="display-3 pb-3">Shop the Mellow Bears Collection</h1>
+        <p class="mb-5 pb-5 text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam libero ea dolor nihil nemo consequuntur molestias, itaque possimus incidunt reiciendis molestiae nesciunt, laudantium accusamus laboriosam! Distinctio quod voluptatum veritatis mollitia!</p>
+    </div>
+</section>
+    
+
+<section class="content2-bg">
+    <div class="row d-flex justify-content-center align-items-center">
+        <div class="col">
+            <!-- Carousel overlap -->
+            <div class="container">
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                    <img src="images/bench-teddy-600-400px.png" class="d-block w-100" alt="bench teddy graphic">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="images/angry-teddy-600-400px.png" class="d-block w-100" alt="angry teddy graphic">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="images/colorful-teddy-600-400px.png" class="d-block w-100" alt="colorful teddy graphic">
+                    </div>
+                </div>
+                </div>
+            </div>
+            </div>
+            <div class="col">
+            <div class="section-text pt-2 ps-4 mb-5 text-center">
+                <h1>Words</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, nobis delectus exercitationem rem expedita commodi ex pariatur repellendus similique impedit ratione dolor tempora atque! Vel corrupti possimus at numquam exercitationem!</p>
+                <button class="btn btn-primary">Button</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ----------- Bootstrap JS --------------- -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+<!-- ----------- AOS Library ---------------- -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+</body>
+</html>

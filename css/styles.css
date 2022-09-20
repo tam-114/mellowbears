@@ -1,0 +1,127 @@
+:root {
+    /* Colors */
+    --darkorange: #C35B1E;
+    --lightorange: #E1CCA6;
+    --lightgreen: #DDEDBD;
+    --lighter-green: #ebefdf;
+    --darkgreen: #B1B7A1;
+    --darker-green: #98ad5e;
+    --blue: #99B6C7;
+    --darkblue: #5b7685;
+    --yellow: #FAECC7;
+    --white: #FFFFFF;
+    --darkbrown: #C8BCAB;
+    --lightbrown: #EBD7C3;
+}
+
+@media screen and (max-width: 992px) {
+    div.bg-image {
+        height: 100vh!important;
+    }
+    h1.display-1 {
+        margin-bottom: 20px!important;
+        margin-top: 0px!important;
+    }
+  }
+
+  @media screen and (max-width: 310px) {
+    div.bg-image {
+        height: 105vh!important;
+    }
+    h1.display-1 {
+        margin-bottom: 20px!important;
+        margin-top: 0px!important;
+    }
+  }
+
+body {
+   background-color: var(--lighter-green);
+}
+
+html {
+    overflow-x: hidden;
+}
+
+div.bg-image {
+    height: 75vh;
+}
+
+.btn-hero {
+    color: black; 
+    border-radius: 30px;
+    background-color: var(--blue);
+}
+
+.btn-hero:hover {
+    color: white; 
+    border-radius: 30px;
+    background-color: var(--darkblue);
+}
+
+.btn-nav:hover {
+    background-color: var(--darkblue);
+}
+
+/* Using skew, important to establish a height, width & position to relative*/
+.content1-bg {
+    background-color: var(--lighter-green);
+    height: auto;
+    width: 100%;
+    position: relative;
+}
+
+.content2-bg {
+    background-color: var(--darkgreen);
+    height: auto;
+    width: 100%;
+    position: relative;
+    z-index: 0;
+}
+
+/* Use pseudo class ::before on the background being skewed, and reiterate bg color */
+.content2-bg::before {
+    content: ""; /*Always needed for pseudo classes to work */
+    width: 50%;
+    height: 200px;
+    position: absolute; /*Keeps skew where you want it */
+    top: -60px;
+    left: 0;
+    background-color: var(--darkgreen);
+    transform: skewY(8deg);
+}
+
+/* Use pseudo class ::after on the same bg being skewed */
+/* Top the same, opposite sides (left & right) and skews (+ & -) */
+.content2-bg::after {
+    content: "";
+    width: 50%;
+    height: 200px;
+    position: absolute;
+    top: -60px;
+    right: 0;
+    background-color: var(--darkgreen);
+    transform: skewY(-8deg);
+}
+
+.sect-label {
+    font-weight: 500;
+    font-size: 12px;
+    color: var(--darker-green);
+}
+
+.display-3 {
+    color: var(--darkorange);
+}
+
+.section-text {
+    position: relative;
+    z-index: 1;
+}
+
+.lay-over {
+    position: relative;
+    margin-top: 200px;
+    padding-top: 50px;
+    z-index: 100;
+}
+
